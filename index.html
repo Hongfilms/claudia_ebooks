@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperClaude & Claudia | AI 가이드</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="https://esm.run/framer-motion"></script>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <div class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 bg-grid-pattern">
+        <header class="text-center mb-12">
+            <h1 id="main-title" class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight opacity-0">
+                AI Agent 가이드북
+            </h1>
+            <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">
+                개발 지식이 없는 분들을 위한 AI 에이전트 활용 전자책. SuperClaude와 Claudia의 모든 것을 알아보세요.
+            </p>
+        </header>
+
+        <main id="ebook-cards" class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <a href="superclaude_ebook.html" class="group block p-8 rounded-2xl bg-gray-800/50 backdrop-blur-sm border border-white/10 hover:border-sky-400/50 transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-sky-500/10 opacity-0 transform hover:-translate-y-2">
+                <div class="overflow-hidden rounded-lg mb-6">
+                    <img src="https://r2.flowith.net/files/o/1754825108195-superclaude_ai_architect_index_0@1024x1024.png" alt="SuperClaude 대표 이미지" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <h2 class="text-3xl font-bold text-white">SuperClaude</h2>
+                <p class="mt-2 text-gray-400">AI 코딩 비서 능력 극대화 가이드</p>
+                <div class="mt-6 flex items-center text-sky-400">
+                    <span>자세히 보기</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
+            
+            <a href="claudia_ebook.html" class="group block p-8 rounded-2xl bg-gray-800/50 backdrop-blur-sm border border-white/10 hover:border-purple-400/50 transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-purple-500/10 opacity-0 transform hover:-translate-y-2">
+                <div class="overflow-hidden rounded-lg mb-6">
+                    <img src="https://r2.flowith.net/files/o/1754825125323-claudia_ai_coding_app_interface_index_1@1024x1024.png" alt="Claudia 대표 이미지" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <h2 class="text-3xl font-bold text-white">Claudia</h2>
+                <p class="mt-2 text-gray-400">AI 코딩을 위한 최고의 관제 센터</p>
+                <div class="mt-6 flex items-center text-purple-400">
+                    <span>자세히 보기</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
+
+        </main>
+        
+        <footer class="mt-16 text-center text-gray-500">
+            <p>&copy; 2025 Neo. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script type="module" src="main_script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
